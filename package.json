@@ -1,0 +1,17 @@
+{
+  "name": "bp-aws_cht_split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+ "dependencies":{
+  "nodejieba":"2.2.4",
+  "async":"2.1.5",
+  "cheerio":"0.22.0",
+  "request":"2.81.0"
+ }
+}
