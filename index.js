@@ -1,4 +1,4 @@
-var request = require("request");                                                                                                                                                            
+var request = require("request");
 var cheerio = require("cheerio");
 var nodejieba = require("nodejieba");
 var async = require('async');
@@ -18,14 +18,14 @@ async.waterfall([
     /* b: 傳回的資料內容 */
     if (e==null) {
       next(null,b)
-    }    
-    }); 
-  },  
+    }
+    });
+  },
   function showcrawel(b,next){
     $ = cheerio.load(b);
     titles = $("div#newstext p").text();
     console.log(titles)
-    
+
     split=nodejieba.extract(titles,4)
     console.log(split)
   }
@@ -36,3 +36,4 @@ function(err){
 })
 
 }
+exports.handler();
